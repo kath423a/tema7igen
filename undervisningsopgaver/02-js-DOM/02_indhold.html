@@ -34,10 +34,14 @@
 
     <script>
         const overskrift = document.querySelector("h1");
+        const artikel1 = document.querySelector("article:nth-child(1) p");
+        const artikel2 = document.querySelector("article:nth-child(2) p");
         overskrift.textContent;
         console.log(overskrift.textContent);
         overskrift.textContent = "Billeder";
         console.log(overskrift.textContent);
+        artikel1.innerHTML = "Her er et <b>billede</b>";
+        artikel2.innerHTML = "Her er endnu et <b>billede</b>"
 
         const underoverskrift = document.querySelector("h2");
         underoverskrift.textContent;
