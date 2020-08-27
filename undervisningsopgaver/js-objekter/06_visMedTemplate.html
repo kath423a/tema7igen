@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        article {
+            border: 2px solid #333;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+    </section>
+
+    <template>
+        <article>
+            <h2></h2>
+            <p class="art"></p>
+            <p class="sted"></p>
+            <img>
+        </article>
+    </template>
+
+    <script>
+        let dyr = [{
+            "navn": "Gris",
+            "type": "Pattedyr",
+            "levested": "Svinesti",
+            "billede": "http://mabe-kea.dk/E19/pics/pig.png"
+        }, {
+            "navn": "Ræv",
+            "type": "Pattedyr",
+            "levested": "Skoven",
+            "billede": "http://mabe-kea.dk/E19/pics/fox.png"
+        }, {
+            "navn": "Frø",
+            "type": "Krybdyr",
+            "levested": "Mosen",
+            "billede": "http://mabe-kea.dk/E19/pics/frog.png"
+        }]
+
+        let container = document.querySelector("section");
+        let temp = document.querySelector("template");
+        //løb igennem array "dyr"
+        dyr.forEach(etDyr => {
+
+            let klon = temp.cloneNode(true).content;
+            klon.querySelector("h2").textContent = etDyr.navn;
+            klon.querySelector(".art").textContent = etDyr.type;
+            klon.querySelector(".sted").textContent = etDyr.levested;
+            klon.querySelector("img").src = etDyr.billede;
+            container.appendChild(klon);
+        })
+
+    </script>
+</body>
+
+</html>
