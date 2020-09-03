@@ -14,23 +14,13 @@
             max-width: 100%;
         }
 
-        section {
+        #liste {
             width: 90vw;
             max-width: 1100px;
             margin: 0 auto;
             display: grid;
             grid-gap: 10px;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        }
-
-        #splash {
-            width: 100vw;
-            height: 40vh;
-            background-image: url(splash.png);
-            background-size: cover;
-            max-width: none;
-            background-position: 90% 10%;
-
         }
 
         header {
@@ -41,8 +31,16 @@
             text-align: center;
         }
 
+        button {
+            color: black;
+            background-color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+        }
+
         .valgt {
-            color: red;
+            color: darkred;
         }
 
         #popop {
@@ -64,12 +62,20 @@
 
         #luk {
             position: fixed;
+            top: 4.5em;
+            right: 8em;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            padding: .2em;
+
+            /*position: fixed;
             top: 10;
             right: 1em;
             background-color: white;
             color: black;
             border-radius: 5px;
-            padding: .1em;
+            padding: .1em;*/
         }
     </style>
 </head>
@@ -88,7 +94,7 @@
         </article>
     </section>
 
-    <section id="splash"></section>
+    <img id="splash" src="splash.png" alt="splash">
 
     <header>
         <button class="filter valgt" data-køn="alle">Alle</button>
