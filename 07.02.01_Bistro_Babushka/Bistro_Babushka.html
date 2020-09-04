@@ -58,24 +58,17 @@
             height: 80vh;
             margin: 4rem auto;
             background-color: white;
+            position: relative;
         }
 
         #luk {
-            position: fixed;
-            top: 4.5em;
-            right: 8em;
+            position: absolute;
+            top: 0;
+            right: 0;
             background-color: #fff;
             color: #000;
             border-radius: 5px;
             padding: .2em;
-
-            /*position: fixed;
-            top: 10;
-            right: 1em;
-            background-color: white;
-            color: black;
-            border-radius: 5px;
-            padding: .1em;*/
         }
     </style>
 </head>
@@ -97,11 +90,11 @@
     <img id="splash" src="splash.png" alt="splash">
 
     <header>
-        <button class="filter valgt" data-køn="alle">Alle</button>
-        <button class="filter" data-køn="Forretter">Forretter</button>
-        <button class="filter" data-køn="Hovedretter">Hovedretter</button>
-        <button class="filter" data-køn="Desserter">Desserter</button>
-        <button class="filter" data-køn="Drikke">Drikke</button>
+        <button class="filter valgt" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="forretter">Forretter</button>
+        <button class="filter" data-kategori="hovedretter">Hovedretter</button>
+        <button class="filter" data-kategori="desserter">Desserter</button>
+        <button class="filter" data-kategori="drikkevarer">Drikke</button>
     </header>
     <h1>Menu</h1>
 
